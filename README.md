@@ -17,7 +17,7 @@ Website ini dikembangkan menggunakan framework Laravel v5.4, merupakan versi pal
 ### Pemasangan (Installation)
 Laravel membutuhkan [Composer](https://getcomposer.org/) dan [php](https://www.apachefriends.org/) 7.1 
 
-Gunakan CMD (command prompt), lalu Install dependencies and devDependencies.
+Gunakan CMD (command prompt) untuk Install dependencies and devDependencies.
 
 ```sh
 Open CMD
@@ -25,7 +25,16 @@ $ cd -d Drive:/path/to/ppi-tng-kota
 $ composer install
 ```
 
-Setelah selesai, jalankan Mysql dan start server...
+Setelah selesai, buat file **.env** dengan mengacu pada *.env.example*
+
+Kemudian, jalankan Mysql dan buat database seperti nama pada file *.env* 
+Jalan kan perintah pada CMD
+
+```sh
+$ php artisan migrate
+```
+
+Lalu, jalankan Mysql dan start server...
 
 ```sh
 $ php artisan serve
